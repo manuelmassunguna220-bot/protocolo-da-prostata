@@ -241,15 +241,6 @@ export function Screen14() {
         </li>
       </ul>
 
-      <p className="font-bold text-gray-900">
-        E você não aguenta mais viver limitado, com medo de depender de fraldas,
-        sondas ou cirurgia...
-      </p>
-
-      <p className="font-bold text-gray-900 text-center text-lg">
-        Então o protocolo natural de 14 dias foi feito pra você.
-      </p>
-
       {/* SECÇÃO GARANTIA (acima do vídeo) */}
       <div className="bg-[#f2f2f2] rounded-2xl p-6 text-center">
         <div className="text-5xl mb-3">🏅</div>
@@ -283,6 +274,15 @@ export function Screen14() {
           </div>
         </div>
       </div>
+
+      <p className="font-bold text-gray-900">
+        E você não aguenta mais viver limitado, com medo de depender de fraldas,
+        sondas ou cirurgia...
+      </p>
+
+      <p className="font-bold text-gray-900 text-center text-lg">
+        Então o protocolo natural de 14 dias foi feito pra você.
+      </p>
 
       {/* SECÇÃO 3 — VÍDEO PRINCIPAL */}
       <div className="rounded-xl overflow-hidden border-2 border-[oklch(0.55_0.16_145)] bg-black">
