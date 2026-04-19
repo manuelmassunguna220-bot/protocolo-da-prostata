@@ -17,6 +17,7 @@ import { Screen12 } from "@/components/quiz/screens/Screen12";
 import { Screen13 } from "@/components/quiz/screens/Screen13";
 import { Screen14 } from "@/components/quiz/screens/Screen14";
 import { Loading } from "@/components/quiz/screens/Loading";
+import { ProtocoloGerado } from "@/components/quiz/screens/ProtocoloGerado";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -28,7 +29,7 @@ function Index() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
 
-  const next = () => setStep((s) => Math.min(s + 1, 16));
+  const next = () => setStep((s) => Math.min(s + 1, 17));
   const prev = () => setStep((s) => Math.max(s - 1, 0));
 
   const answer = (key: string, value: string | string[]) => {
@@ -39,8 +40,8 @@ function Index() {
   // Quiz screens (1..13) get header + progress
   const isQuiz = step >= 1 && step <= 13;
   const showHeader = step >= 1; // landing has none
-  const showProgress = isQuiz;
-  const progress = isQuiz ? (step / 13) * 100 : 0;
+  const showProgress = isQuiz || step === 16; // also full bar on Protocolo Gerado
+  const progress = isQuiz ? (step / 13) * 100 : step === 16 ? 100 : 0;
 
   let content: React.ReactNode = null;
   switch (step) {
@@ -119,6 +120,9 @@ function Index() {
       content = <Loading onDone={next} />;
       break;
     case 16:
+      content = <ProtocoloGerado onContinue={next} />;
+      break;
+    case 17:
       content = <Screen14 />;
       break;
   }
