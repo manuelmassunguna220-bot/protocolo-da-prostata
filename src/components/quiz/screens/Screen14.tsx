@@ -250,6 +250,40 @@ export function Screen14() {
         Então o protocolo natural de 14 dias foi feito pra você.
       </p>
 
+      {/* SECÇÃO GARANTIA (acima do vídeo) */}
+      <div className="bg-[#f2f2f2] rounded-2xl p-6 text-center">
+        <div className="text-5xl mb-3">🏅</div>
+        <div className="font-bold text-gray-900 text-lg mb-3">
+          Seu risco é zero!
+        </div>
+        <p className="text-xs font-bold text-gray-800 uppercase leading-relaxed">
+          O CÓDIGO DE DEFESA DO CONSUMIDOR GARANTE 7 DIAS DE GARANTIA
+          INCONDICIONAL EM SEU ART 49. MAS NÓS CONFIAMOS TANTO NA QUALIDADE DO
+          NOSSO PRODUTO QUE IREMOS ESTENDER PARA 180 DIAS. CASO CUMPRA O
+          PROTOCOLO E NÃO TENHA RESULTADOS IREMOS DEVOLVER SEU DINHEIRO SEM
+          BUROCRACIA! FAÇA O TESTE SEM COMPROMISSO!
+        </p>
+      </div>
+
+      <div className="space-y-3">
+        <div className="flex items-start gap-2">
+          <span className="text-[oklch(0.5_0.17_145)] flex-shrink-0">✅</span>
+          <div>
+            <div className="font-bold text-gray-900 text-sm">Pagamento Único</div>
+            <div className="text-sm text-gray-700">Sem mensalidades.</div>
+          </div>
+        </div>
+        <div className="flex items-start gap-2">
+          <span className="text-[oklch(0.5_0.17_145)] flex-shrink-0">✅</span>
+          <div>
+            <div className="font-bold text-gray-900 text-sm">Acesso Imediato</div>
+            <div className="text-sm text-gray-700">
+              Acesso imediato após o pagamento.
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* SECÇÃO 3 — VÍDEO PRINCIPAL */}
       <div className="rounded-xl overflow-hidden border-2 border-[oklch(0.55_0.16_145)] bg-black">
         <video
