@@ -169,7 +169,7 @@ function CtaButton() {
 
 function PriceCard() {
   return (
-    <div className="bg-[oklch(0.94_0.06_145)] rounded-xl p-4 flex items-center justify-between gap-3">
+    <div className="bg-[#d5f5e3] rounded-xl p-5 flex items-center justify-between gap-3">
       <div className="flex-1">
         <div className="text-[oklch(0.5_0.17_145)] font-extrabold text-lg leading-tight">
           TESTE 180 DIAS
@@ -178,11 +178,12 @@ function PriceCard() {
           sem compromisso
         </div>
       </div>
-      <div className="bg-white rounded-xl px-3 py-2 text-right shadow-sm">
-        <div className="text-[10px] text-gray-600 leading-tight">por apenas</div>
-        <div className="text-[10px] text-gray-600 leading-tight">5x de</div>
-        <div className="text-[oklch(0.5_0.17_145)] font-extrabold text-xl leading-tight">
-          R$ 8,27
+      <div className="bg-white rounded-lg px-3 py-3 text-center shadow-sm">
+        <div className="text-xs text-gray-500 line-through leading-tight">
+          De 22.500 Kz
+        </div>
+        <div className="text-[oklch(0.5_0.17_145)] font-extrabold text-xl leading-tight mt-1">
+          por 3.500 Kz
         </div>
       </div>
     </div>
@@ -261,19 +262,6 @@ export function Screen14() {
         </video>
       </div>
 
-      {/* SECÇÃO 4 — BENEFÍCIOS + PREÇO + CTA */}
-      <h3 className="font-bold text-gray-900 text-base">
-        Nas primeiras semanas seguindo nosso protocolo, você vai...
-      </h3>
-      <ul className="space-y-2 text-gray-800 text-sm pl-4 list-disc">
-        <li>Sentir a urina fluir com mais facilidade e menos esforço.</li>
-        <li>Dormir melhor, sem precisar levantar várias vezes durante a noite.</li>
-        <li>Perceber o retorno gradual da libido e da firmeza nas relações.</li>
-      </ul>
-
-      <PriceCard />
-      <CtaButton />
-
       {/* SECÇÃO 5 — DEPOIMENTOS */}
       <div className="space-y-4">
         <Testimonial
@@ -295,6 +283,18 @@ export function Screen14() {
           text="Meu marido passou anos sofrendo calado. Ele levantava várias vezes à noite, ficava irritado, cansado, e evitava até os momentos a dois. Eu via o quanto aquilo mexia com a autoestima dele, mas ele nunca falava muito sobre. Quando ele começou o protocolo, confesso que fiquei com o pé atrás... mas em poucos dias vi meu marido voltar a sorrir, dormir melhor e recuperar a confiança. Hoje ele mesmo diz que se sente mais homem, mais leve e com energia de novo. E eu? Me sinto casada com o homem de antes — ou até melhor."
         />
       </div>
+
+      {/* SECÇÃO 5B — BENEFÍCIOS + PREÇO + CTA (movido) */}
+      <h3 className="font-bold text-gray-900 text-base">
+        Nas primeiras semanas seguindo nosso protocolo, você vai...
+      </h3>
+      <ul className="space-y-2 text-gray-800 text-sm pl-4 list-disc">
+        <li>Sentir a urina fluir com mais facilidade e menos esforço.</li>
+        <li>Dormir melhor, sem precisar levantar várias vezes durante a noite.</li>
+        <li>Perceber o retorno gradual da libido e da firmeza nas relações.</li>
+      </ul>
+      <PriceCard />
+      <CtaButton />
 
       {/* SECÇÃO 6 — BÓNUS GUIA + CTA */}
       <h3 className="font-bold text-gray-900 text-center text-xl leading-snug">
