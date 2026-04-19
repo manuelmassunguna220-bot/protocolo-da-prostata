@@ -6,6 +6,7 @@ import { Screen1 } from "@/components/quiz/screens/Screen1";
 import { Screen2 } from "@/components/quiz/screens/Screen2";
 import { Screen3 } from "@/components/quiz/screens/Screen3";
 import { Screen4 } from "@/components/quiz/screens/Screen4";
+import { Screen4B } from "@/components/quiz/screens/Screen4B";
 import { MultiSelect } from "@/components/quiz/screens/MultiSelect";
 import { Screen6 } from "@/components/quiz/screens/Screen6";
 import { Screen7 } from "@/components/quiz/screens/Screen7";
@@ -26,7 +27,7 @@ function Index() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
 
-  const next = () => setStep((s) => Math.min(s + 1, 14));
+  const next = () => setStep((s) => Math.min(s + 1, 15));
   const prev = () => setStep((s) => Math.max(s - 1, 0));
 
   const answer = (key: string, value: string | string[]) => {
@@ -34,11 +35,11 @@ function Index() {
     next();
   };
 
-  // Quiz screens (1..12) get header + progress
-  const isQuiz = step >= 1 && step <= 12;
+  // Quiz screens (1..13) get header + progress
+  const isQuiz = step >= 1 && step <= 13;
   const showHeader = step >= 1; // landing has none
   const showProgress = isQuiz;
-  const progress = isQuiz ? (step / 12) * 100 : 0;
+  const progress = isQuiz ? (step / 13) * 100 : 0;
 
   let content: React.ReactNode = null;
   switch (step) {
@@ -58,6 +59,9 @@ function Index() {
       content = <Screen4 onAnswer={(v) => answer("hpb_time", v)} />;
       break;
     case 5:
+      content = <Screen4B onContinue={next} />;
+      break;
+    case 6:
       content = (
         <MultiSelect
           title="Você tem alguma dessas condições?"
@@ -73,19 +77,19 @@ function Index() {
         />
       );
       break;
-    case 6:
+    case 7:
       content = <Screen6 onAnswer={(v) => answer("desparasitou", v)} />;
       break;
-    case 7:
+    case 8:
       content = <Screen7 onContinue={next} />;
       break;
-    case 8:
+    case 9:
       content = <Screen8 onAnswer={(v) => answer("ciencia_gravidade", v)} />;
       break;
-    case 9:
+    case 10:
       content = <Screen9 onAnswer={(v) => answer("concorda", v)} />;
       break;
-    case 10:
+    case 11:
       content = (
         <MultiSelect
           title="Você comeu algum desses alimentos nos ultimos 3 meses?"
@@ -101,16 +105,16 @@ function Index() {
         />
       );
       break;
-    case 11:
+    case 12:
       content = <Screen11 onContinue={(s) => answer("sintomas_incomodam", s)} />;
       break;
-    case 12:
+    case 13:
       content = <Screen12 onAnswer={(v) => answer("tempo_sintomas", v)} />;
       break;
-    case 13:
+    case 14:
       content = <Screen13 onContinue={next} />;
       break;
-    case 14:
+    case 15:
       content = <Screen14 />;
       break;
   }
@@ -120,7 +124,7 @@ function Index() {
       showHeader={showHeader}
       showProgress={showProgress}
       progress={progress}
-      onBack={step > 0 && step <= 13 ? prev : undefined}
+      onBack={step > 0 && step <= 14 ? prev : undefined}
       fadeKey={step}
     >
       {content}
