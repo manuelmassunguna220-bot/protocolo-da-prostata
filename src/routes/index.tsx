@@ -17,6 +17,7 @@ import { Screen12 } from "@/components/quiz/screens/Screen12";
 import { Screen13 } from "@/components/quiz/screens/Screen13";
 import { Screen14 } from "@/components/quiz/screens/Screen14";
 import { Loading } from "@/components/quiz/screens/Loading";
+import { ProtocoloGerado } from "@/components/quiz/screens/ProtocoloGerado";
 
 export const Route = createFileRoute("/")({
   component: Index,
