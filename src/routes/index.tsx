@@ -120,6 +120,9 @@ function Index() {
       content = <Loading onDone={next} />;
       break;
     case 16:
+      content = <ProtocoloGerado onContinue={next} />;
+      break;
+    case 17:
       content = <Screen14 />;
       break;
   }
