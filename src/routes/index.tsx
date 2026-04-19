@@ -16,6 +16,7 @@ import { Screen11 } from "@/components/quiz/screens/Screen11";
 import { Screen12 } from "@/components/quiz/screens/Screen12";
 import { Screen13 } from "@/components/quiz/screens/Screen13";
 import { Screen14 } from "@/components/quiz/screens/Screen14";
+import { Loading } from "@/components/quiz/screens/Loading";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -27,7 +28,7 @@ function Index() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
 
-  const next = () => setStep((s) => Math.min(s + 1, 15));
+  const next = () => setStep((s) => Math.min(s + 1, 16));
   const prev = () => setStep((s) => Math.max(s - 1, 0));
 
   const answer = (key: string, value: string | string[]) => {
@@ -115,14 +116,21 @@ function Index() {
       content = <Screen13 onContinue={next} />;
       break;
     case 15:
+      content = <Loading onDone={next} />;
+      break;
+    case 16:
       content = <Screen14 />;
       break;
   }
 
+  const isLoading = step === 15;
+  const showHeaderFinal = showHeader && !isLoading;
+  const showProgressFinal = showProgress && !isLoading;
+
   return (
     <QuizShell
-      showHeader={showHeader}
-      showProgress={showProgress}
+      showHeader={showHeaderFinal}
+      showProgress={showProgressFinal}
       progress={progress}
       onBack={step > 0 && step <= 14 ? prev : undefined}
       fadeKey={step}
