@@ -22,9 +22,9 @@ export function Screen14() {
       </h2>
 
       <div className="text-center">
-        <div className="text-gray-500 text-base line-through">De R$ 297,00</div>
+        <div className="text-gray-500 text-base line-through">De 22.500 Kz</div>
         <div className="text-[oklch(0.5_0.17_145)] font-extrabold text-4xl">
-          por R$ 47,00
+          por 3.500 Kz
         </div>
         <div className="text-sm text-gray-600">à vista ou em até 12x no cartão</div>
       </div>
