@@ -180,10 +180,10 @@ function PriceCard() {
       </div>
       <div className="bg-white rounded-lg px-3 py-3 text-center shadow-sm">
         <div className="text-xs text-gray-500 line-through leading-tight">
-          De 22.500 Kz
+          De 12.500 Kz
         </div>
         <div className="text-[oklch(0.5_0.17_145)] font-extrabold text-xl leading-tight mt-1">
-          por 3.500 Kz
+          por 1.500 Kz
         </div>
       </div>
     </div>
