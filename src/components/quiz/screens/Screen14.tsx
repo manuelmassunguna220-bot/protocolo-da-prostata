@@ -159,10 +159,10 @@ function Testimonial({
   );
 }
 
-function CtaButton() {
+function CtaButton({ label = "Acessar meu Protocolo Agora! ✅" }: { label?: string } = {}) {
   return (
     <PrimaryButton href="#checkout">
-      Acessar meu Protocolo Agora! ✅
+      {label}
     </PrimaryButton>
   );
 }
