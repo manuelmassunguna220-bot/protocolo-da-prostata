@@ -253,7 +253,7 @@ export function Screen14() {
       {/* SECÇÃO 3 — VÍDEO PRINCIPAL */}
       <div className="rounded-xl overflow-hidden border-2 border-[oklch(0.55_0.16_145)] bg-black aspect-video">
         <iframe
-          src="https://www.youtube.com/embed/OyyqCS0UFDw"
+          src="https://www.youtube.com/embed/xXA8mJer56k"
           title="Vídeo do Protocolo"
           className="w-full h-full"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
