@@ -241,12 +241,12 @@ export function Screen14() {
         </li>
       </ul>
 
-      <p className="font-bold text-gray-900">
+      <h3 className="font-extrabold text-gray-900 text-xl sm:text-2xl leading-snug text-center">
         E você não aguenta mais viver limitado, com medo de depender de fraldas,
         sondas ou cirurgia...
-      </p>
+      </h3>
 
-      <p className="font-bold text-gray-900 text-center text-lg">
+      <p className="text-gray-700 text-sm sm:text-base text-center leading-relaxed">
         Então o protocolo natural de 14 dias foi feito pra você.
       </p>
 
