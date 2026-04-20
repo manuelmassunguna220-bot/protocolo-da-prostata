@@ -251,15 +251,14 @@ export function Screen14() {
       </p>
 
       {/* SECÇÃO 3 — VÍDEO PRINCIPAL */}
-      <div className="rounded-xl overflow-hidden border-2 border-[oklch(0.55_0.16_145)] bg-black">
-        <video
-          controls
-          className="w-full h-auto"
-          poster="/video-poster.jpg"
-        >
-          <source src="/video-vsl.mp4" type="video/mp4" />
-          Seu navegador não suporta vídeo.
-        </video>
+      <div className="rounded-xl overflow-hidden border-2 border-[oklch(0.55_0.16_145)] bg-black aspect-video">
+        <iframe
+          src="https://www.youtube.com/embed/OyyqCS0UFDw"
+          title="Vídeo do Protocolo"
+          className="w-full h-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
       </div>
 
       {/* SECÇÃO 5 — DEPOIMENTOS */}
