@@ -283,7 +283,7 @@ export function Screen14() {
         />
       </div>
 
-      {/* SECÇÃO 5B — BENEFÍCIOS + PREÇO + CTA (movido) */}
+      {/* SECÇÃO 5B — BENEFÍCIOS + GARANTIA + PREÇO + CTA */}
       <h3 className="font-bold text-gray-900 text-base">
         Nas primeiras semanas seguindo nosso protocolo, você vai...
       </h3>
@@ -292,6 +292,53 @@ export function Screen14() {
         <li>Dormir melhor, sem precisar levantar várias vezes durante a noite.</li>
         <li>Perceber o retorno gradual da libido e da firmeza nas relações.</li>
       </ul>
+
+      {/* GARANTIA (movida para acima do preço) */}
+      <div className="bg-[#f2f2f2] rounded-2xl p-6 text-center">
+        <div className="text-5xl mb-3">🏅</div>
+        <div className="font-bold text-gray-900 text-lg mb-3">
+          Seu risco é zero!
+        </div>
+        <p className="text-xs font-bold text-gray-800 uppercase leading-relaxed">
+          O CÓDIGO DE DEFESA DO CONSUMIDOR GARANTE 7 DIAS DE GARANTIA
+          INCONDICIONAL EM SEU ART 49. MAS NÓS CONFIAMOS TANTO NA QUALIDADE DO
+          NOSSO PRODUTO QUE IREMOS ESTENDER PARA 180 DIAS. CASO CUMPRA O
+          PROTOCOLO E NÃO TENHA RESULTADOS IREMOS DEVOLVER SEU DINHEIRO SEM
+          BUROCRACIA! FAÇA O TESTE SEM COMPROMISSO!
+        </p>
+      </div>
+
+      <div className="space-y-3">
+        <div className="flex items-start gap-2">
+          <span className="text-[oklch(0.5_0.17_145)] flex-shrink-0">✅</span>
+          <div>
+            <div className="font-bold text-gray-900 text-sm">Pagamento Único</div>
+            <div className="text-sm text-gray-700">Sem mensalidades.</div>
+          </div>
+        </div>
+        <div className="flex items-start gap-2">
+          <span className="text-[oklch(0.5_0.17_145)] flex-shrink-0">✅</span>
+          <div>
+            <div className="font-bold text-gray-900 text-sm">Acesso Imediato</div>
+            <div className="text-sm text-gray-700">
+              Acesso imediato após o pagamento.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#1a1a2e] rounded-xl p-4 flex items-center gap-3">
+        <div className="text-4xl flex-shrink-0">🏅</div>
+        <div className="flex-1">
+          <div className="text-white font-bold text-sm leading-tight">
+            TESTE SEGURO 180 DIAS DE GARANTIA
+          </div>
+          <div className="text-white text-xs mt-1">
+            Resultado Garantido ou Seu Dinheiro de Volta.
+          </div>
+        </div>
+      </div>
+
       <PriceCard />
       <CtaButton />
 
@@ -339,51 +386,6 @@ export function Screen14() {
       />
       <CtaButton />
 
-      {/* SECÇÃO 8 — GARANTIA */}
-      <div className="bg-[#f2f2f2] rounded-2xl p-6 text-center">
-        <div className="text-5xl mb-3">🏅</div>
-        <div className="font-bold text-gray-900 text-lg mb-3">
-          Seu risco é zero!
-        </div>
-        <p className="text-xs font-bold text-gray-800 uppercase leading-relaxed">
-          O CÓDIGO DE DEFESA DO CONSUMIDOR GARANTE 7 DIAS DE GARANTIA
-          INCONDICIONAL EM SEU ART 49. MAS NÓS CONFIAMOS TANTO NA QUALIDADE DO
-          NOSSO PRODUTO QUE IREMOS ESTENDER PARA 180 DIAS. CASO CUMPRA O
-          PROTOCOLO E NÃO TENHA RESULTADOS IREMOS DEVOLVER SEU DINHEIRO SEM
-          BUROCRACIA! FAÇA O TESTE SEM COMPROMISSO!
-        </p>
-      </div>
-
-      <div className="space-y-3">
-        <div className="flex items-start gap-2">
-          <span className="text-[oklch(0.5_0.17_145)] flex-shrink-0">✅</span>
-          <div>
-            <div className="font-bold text-gray-900 text-sm">Pagamento Único</div>
-            <div className="text-sm text-gray-700">Sem mensalidades.</div>
-          </div>
-        </div>
-        <div className="flex items-start gap-2">
-          <span className="text-[oklch(0.5_0.17_145)] flex-shrink-0">✅</span>
-          <div>
-            <div className="font-bold text-gray-900 text-sm">Acesso Imediato</div>
-            <div className="text-sm text-gray-700">
-              Acesso imediato após o pagamento.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-[#1a1a2e] rounded-xl p-4 flex items-center gap-3">
-        <div className="text-4xl flex-shrink-0">🏅</div>
-        <div className="flex-1">
-          <div className="text-white font-bold text-sm leading-tight">
-            TESTE SEGURO 180 DIAS DE GARANTIA
-          </div>
-          <div className="text-white text-xs mt-1">
-            Resultado Garantido ou Seu Dinheiro de Volta.
-          </div>
-        </div>
-      </div>
 
       {/* SECÇÃO 9 — TEXTO MOTIVACIONAL + CTA */}
       <p className="font-bold text-gray-900">
