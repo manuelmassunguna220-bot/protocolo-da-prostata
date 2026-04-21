@@ -193,6 +193,97 @@ function PriceCard() {
 export function Screen14() {
   return (
     <div className="space-y-6">
+      {/* SECÇÃO NOVA 1 — PROTOCOLO GERADO COM SUCESSO */}
+      <div className="text-center text-sm mb-2">
+        😍 Protocolo <span className="underline font-bold">Gerado com SUCESSO!</span>
+      </div>
+      <div
+        className="rounded-2xl p-6 text-center"
+        style={{ backgroundColor: "#27ae60" }}
+      >
+        <div className="text-white font-bold text-xl mb-3">O seu protocolo</div>
+        <div className="bg-black/30 rounded-lg px-3 py-2 inline-block">
+          <span className="text-white font-bold">Exclusivo está pronto!</span>
+        </div>
+        <div className="flex justify-center mt-4">
+          <div className="w-9 h-9 rounded-full bg-blue-500 text-white flex items-center justify-center text-lg font-bold shadow-md">
+            ⬇
+          </div>
+        </div>
+      </div>
+      <h2 className="text-center text-2xl font-bold leading-snug mt-4">
+        <span className="text-[oklch(0.5_0.17_145)]">
+          Desinche a próstata em 14 dias
+        </span>
+        <span className="text-gray-900">
+          {" "}com esta bebida caseira feita com apenas 2 ingredientes naturais!
+        </span>
+      </h2>
+      <p className="text-center text-base text-gray-600 mt-3 leading-relaxed">
+        A preparação revelada por especialistas em saúde masculina, com as
+        principais ervas anti-inflamatórias e cuidados que ajudam a reduzir o
+        volume da próstata e melhorar a função urinária e sexual —{" "}
+        <strong>
+          sem remédios, sem cirurgia, e com resultados visíveis mesmo após os
+          40 anos...
+        </strong>
+      </p>
+
+      {/* SECÇÃO NOVA 2 — ANTES E DEPOIS */}
+      <div className="grid grid-cols-2 gap-3 mt-8 mb-8">
+        {/* ANTES */}
+        <div>
+          <div className="text-center font-bold text-lg mb-2">ANTES</div>
+          <img
+            src="/antes.jpg"
+            alt="Antes"
+            className="w-full h-auto rounded-xl object-cover bg-gray-200 aspect-square"
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).style.visibility = "hidden";
+            }}
+          />
+          <p className="text-center text-sm mt-2 text-gray-800 leading-snug">
+            <strong>Este é você sendo afetado pelos parasitas:</strong> cada dia
+            mais difícil para urinar e perdendo, aos poucos, seu desempenho
+            sexual.
+          </p>
+          <div className="relative mt-3 h-[6px] rounded bg-gray-300 overflow-visible">
+            <div className="h-full rounded bg-gray-400" style={{ width: "30%" }} />
+            <div
+              className="absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-gray-500 shadow"
+              style={{ left: "calc(30% - 6px)" }}
+            />
+          </div>
+        </div>
+        {/* DEPOIS */}
+        <div>
+          <div className="text-center font-bold text-lg mb-2">DEPOIS</div>
+          <img
+            src="/depois.jpg"
+            alt="Depois"
+            className="w-full h-auto rounded-xl object-cover bg-gray-200 aspect-square"
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).style.visibility = "hidden";
+            }}
+          />
+          <p className="text-center text-sm mt-2 text-gray-800 leading-snug">
+            <strong>Esse é você livre da HPB:</strong> próstata controlada,
+            noites bem dormidas, sem pinga-pinga e com o desempenho sexual de
+            quando tinha 25 anos.
+          </p>
+          <div className="relative mt-3 h-[6px] rounded bg-gray-300 overflow-visible">
+            <div
+              className="h-full rounded"
+              style={{ width: "100%", backgroundColor: "#27ae60" }}
+            />
+            <div
+              className="absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full shadow"
+              style={{ left: "calc(100% - 12px)", backgroundColor: "#27ae60" }}
+            />
+          </div>
+        </div>
+      </div>
+
       {/* SECÇÃO 1 — ÁUDIO */}
       <div className="text-center">
         <h3 className="text-lg font-bold text-gray-900">
