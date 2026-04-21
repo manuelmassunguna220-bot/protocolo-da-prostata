@@ -336,6 +336,81 @@ export function Screen14() {
         </li>
       </ul>
 
+      {/* SECÇÃO — O QUE VOCÊ VAI RECEBER */}
+      <div className="pt-2">
+        <img
+          src="/logo.png"
+          alt="Logo"
+          style={{ width: "180px", margin: "0 auto 24px" }}
+          className="block"
+          onError={(e) => {
+            (e.currentTarget as HTMLImageElement).style.visibility = "hidden";
+          }}
+        />
+        <div className="space-y-2">
+          {[
+            "Preparação para desparasitação - 12.500 kz",
+            "Desparasitação completa - 12.500 kz",
+            "Acompanhamento Individual 18.500 kz",
+            "Guia alimentar contra parasitas 7.500 kz",
+            "Tira duvidas com a equipe 9.900 kz",
+            "Manutenção anual do protocolo 11.500 kz",
+            "Receita para desinflamação da próstata em 14 Dias - 19.900 kz",
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="bg-white border border-gray-200 rounded-xl p-4 flex items-center gap-2"
+            >
+              <span className="flex-shrink-0">✅</span>
+              <span className="text-black text-base font-normal">{item}</span>
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-6">
+          <div
+            style={{
+              textDecoration: "line-through",
+              color: "#e74c3c",
+              fontSize: "20px",
+              fontWeight: "bold",
+            }}
+          >
+            Valor total: 27.900 kz
+          </div>
+          <div
+            style={{
+              color: "#27ae60",
+              fontSize: "18px",
+              fontWeight: "bold",
+              marginTop: "8px",
+            }}
+          >
+            Por apenas
+          </div>
+          <div
+            style={{
+              color: "#27ae60",
+              fontSize: "42px",
+              fontWeight: "bold",
+              marginTop: 0,
+            }}
+          >
+            3.500 kz
+          </div>
+        </div>
+        <a
+          href="#checkout"
+          className="block w-full text-center text-white font-bold mt-6"
+          style={{
+            backgroundColor: "#27ae60",
+            borderRadius: "24px",
+            padding: "16px",
+          }}
+        >
+          Acessar meu Protocolo Agora! ✅
+        </a>
+      </div>
+
       <h3 className="font-extrabold text-gray-900 text-xl sm:text-2xl leading-snug text-center">
         E você não aguenta mais viver limitado, com medo de depender de fraldas,
         sondas ou cirurgia...
