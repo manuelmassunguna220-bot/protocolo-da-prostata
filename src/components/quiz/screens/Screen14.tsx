@@ -235,11 +235,11 @@ export function Screen14() {
         <div>
           <div className="text-center font-bold text-lg mb-2">ANTES</div>
           <img
-            src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=400&q=80"
+            src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=400&q=80"
             alt="Antes"
             crossOrigin="anonymous"
             className="block w-full rounded-xl object-cover bg-gray-200"
-            style={{ height: "180px" }}
+            style={{ height: "200px", objectPosition: "top" }}
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).style.visibility = "hidden";
             }}
@@ -261,11 +261,11 @@ export function Screen14() {
         <div>
           <div className="text-center font-bold text-lg mb-2">DEPOIS</div>
           <img
-            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
             alt="Depois"
             crossOrigin="anonymous"
             className="block w-full rounded-xl object-cover bg-gray-200"
-            style={{ height: "180px" }}
+            style={{ height: "200px", objectPosition: "top" }}
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).style.visibility = "hidden";
             }}
