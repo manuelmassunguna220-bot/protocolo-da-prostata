@@ -235,7 +235,7 @@ export function Screen14() {
         <div>
           <div className="text-center font-bold text-lg mb-2">ANTES</div>
           <img
-            src="https://images.unsplash.com/photo-1584516150909-c43483ee7932?w=400&q=80"
+            src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=400&q=80"
             alt="Antes"
             crossOrigin="anonymous"
             className="block w-full rounded-xl object-cover bg-gray-200"
@@ -261,7 +261,7 @@ export function Screen14() {
         <div>
           <div className="text-center font-bold text-lg mb-2">DEPOIS</div>
           <img
-            src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&q=80"
+            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
             alt="Depois"
             crossOrigin="anonymous"
             className="block w-full rounded-xl object-cover bg-gray-200"
