@@ -385,7 +385,7 @@ export function Screen14() {
               marginTop: "8px",
             }}
           >
-            Por apenas
+            Hoje Por Apenas
           </div>
           <div
             style={{
