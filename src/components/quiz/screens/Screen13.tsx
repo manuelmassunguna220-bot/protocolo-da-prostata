@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { PrimaryButton } from "../QuizShell";
+import anaLima2Audio from "@/assets/Ana_Lima-2.mp3";
 
 export function Screen13({ onContinue }: { onContinue: () => void }) {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -73,7 +74,7 @@ export function Screen13({ onContinue }: { onContinue: () => void }) {
           <audio
             id="audio-penultima"
             ref={audioRef}
-            src="/audio2.mp3"
+            src={anaLima2Audio}
             preload="metadata"
             onEnded={() => setPlaying(false)}
           />
