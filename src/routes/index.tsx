@@ -29,10 +29,23 @@ function Index() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
 
-  const next = () => setStep((s) => Math.min(s + 1, 17));
-  const prev = () => setStep((s) => Math.max(s - 1, 0));
+  const scrollTop = () => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  const next = () => {
+    scrollTop();
+    setStep((s) => Math.min(s + 1, 17));
+  };
+  const prev = () => {
+    scrollTop();
+    setStep((s) => Math.max(s - 1, 0));
+  };
 
   const answer = (key: string, value: string | string[]) => {
+    scrollTop();
     setAnswers((a) => ({ ...a, [key]: value }));
     next();
   };
