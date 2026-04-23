@@ -58,7 +58,7 @@ function AudioPlayer() {
         <audio
           id="audio-vsl"
           ref={audioRef}
-          src="/audio-vsl.mp3"
+          src={anaLima3Audio}
           preload="metadata"
           onEnded={() => setPlaying(false)}
         />
