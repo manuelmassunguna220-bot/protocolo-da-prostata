@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { PrimaryButton } from "../QuizShell";
+import anaLima3Audio from "@/assets/Ana_Lima-3.mp3";
 
 const GREEN = "oklch(0.55_0.16_145)";
 const GREEN_DARK = "oklch(0.5_0.17_145)";
@@ -57,7 +58,7 @@ function AudioPlayer() {
         <audio
           id="audio-vsl"
           ref={audioRef}
-          src="/audio-vsl.mp3"
+          src={anaLima3Audio}
           preload="metadata"
           onEnded={() => setPlaying(false)}
         />
