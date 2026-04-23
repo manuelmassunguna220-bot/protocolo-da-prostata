@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { PrimaryButton } from "../QuizShell";
+import anaLimaAudio from "@/assets/Ana_Lima.mp3";
 
 export function Screen4B({ onContinue }: { onContinue: () => void }) {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -78,7 +79,7 @@ export function Screen4B({ onContinue }: { onContinue: () => void }) {
             </div>
             <span className="text-xs text-gray-500 font-medium">00:39</span>
           </div>
-          <audio ref={audioRef} src="/audio1.mp3" preload="metadata" onEnded={() => setPlaying(false)} />
+          <audio ref={audioRef} src={anaLimaAudio} preload="metadata" onEnded={() => setPlaying(false)} />
         </div>
       </div>
 
