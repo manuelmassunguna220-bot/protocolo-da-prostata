@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import { PrimaryButton } from "../QuizShell";
 import anaLima3Audio from "@/assets/Ana_Lima-3.mp3";
+import antesProstata from "@/assets/antes-prostata.png";
+import depoisProstata from "@/assets/depois-prostata.png";
 
 const GREEN = "oklch(0.55_0.16_145)";
 const GREEN_DARK = "oklch(0.5_0.17_145)";
@@ -236,9 +238,8 @@ export function Screen14() {
         <div>
           <div className="text-center font-bold text-lg mb-2">ANTES</div>
           <img
-            src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=400&q=80"
+            src={antesProstata}
             alt="Antes"
-            crossOrigin="anonymous"
             className="block w-full rounded-xl object-cover bg-gray-200"
             style={{ height: "200px", objectPosition: "top" }}
             onError={(e) => {
@@ -262,9 +263,8 @@ export function Screen14() {
         <div>
           <div className="text-center font-bold text-lg mb-2">DEPOIS</div>
           <img
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+            src={depoisProstata}
             alt="Depois"
-            crossOrigin="anonymous"
             className="block w-full rounded-xl object-cover bg-gray-200"
             style={{ height: "200px", objectPosition: "top" }}
             onError={(e) => {
