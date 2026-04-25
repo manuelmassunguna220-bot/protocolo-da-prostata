@@ -405,7 +405,9 @@ export function Screen14() {
           </div>
         </div>
         <a
-          href="#checkout"
+          href={CHECKOUT_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="block w-full text-center text-white font-bold mt-6"
           style={{
             backgroundColor: "#27ae60",
