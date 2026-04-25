@@ -518,7 +518,7 @@ export function Screen14() {
       </div>
 
       <PriceCard />
-      <CtaButton label="Adquirir o Teste Agora" href="#checkout" />
+      <CtaButton label="Adquirir o Teste Agora" href="https://pay.kumbipay.com/a366d7a6-1320-488c-be64-a261b738c86e" />
 
       {/* SECÇÃO 6 — BÓNUS GUIA + CTA */}
       <h3 className="font-bold text-gray-900 text-center text-xl leading-snug">
