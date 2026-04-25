@@ -162,9 +162,14 @@ function Testimonial({
   );
 }
 
-function CtaButton({ label = "Acessar meu Protocolo Agora! ✅" }: { label?: string } = {}) {
+const CHECKOUT_URL = "https://pay.kumbipay.com/59bbe197-7440-490f-a829-e65431f9bcd1";
+
+function CtaButton({
+  label = "Acessar meu Protocolo Agora! ✅",
+  href = CHECKOUT_URL,
+}: { label?: string; href?: string } = {}) {
   return (
-    <PrimaryButton href="#checkout">
+    <PrimaryButton href={href}>
       {label}
     </PrimaryButton>
   );
@@ -400,7 +405,9 @@ export function Screen14() {
           </div>
         </div>
         <a
-          href="#checkout"
+          href={CHECKOUT_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="block w-full text-center text-white font-bold mt-6"
           style={{
             backgroundColor: "#27ae60",
@@ -511,7 +518,7 @@ export function Screen14() {
       </div>
 
       <PriceCard />
-      <CtaButton label="Adquirir o Teste Agora" />
+      <CtaButton label="Adquirir o Teste Agora" href="#checkout" />
 
       {/* SECÇÃO 6 — BÓNUS GUIA + CTA */}
       <h3 className="font-bold text-gray-900 text-center text-xl leading-snug">
