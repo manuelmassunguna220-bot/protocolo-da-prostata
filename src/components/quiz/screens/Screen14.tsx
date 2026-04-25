@@ -162,9 +162,14 @@ function Testimonial({
   );
 }
 
-function CtaButton({ label = "Acessar meu Protocolo Agora! ✅" }: { label?: string } = {}) {
+const CHECKOUT_URL = "https://pay.kumbipay.com/59bbe197-7440-490f-a829-e65431f9bcd1";
+
+function CtaButton({
+  label = "Acessar meu Protocolo Agora! ✅",
+  href = CHECKOUT_URL,
+}: { label?: string; href?: string } = {}) {
   return (
-    <PrimaryButton href="#checkout">
+    <PrimaryButton href={href}>
       {label}
     </PrimaryButton>
   );
