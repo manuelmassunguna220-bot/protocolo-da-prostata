@@ -518,7 +518,7 @@ export function Screen14() {
       </div>
 
       <PriceCard />
-      <CtaButton label="Adquirir o Teste Agora" />
+      <CtaButton label="Adquirir o Teste Agora" href="#checkout" />
 
       {/* SECÇÃO 6 — BÓNUS GUIA + CTA */}
       <h3 className="font-bold text-gray-900 text-center text-xl leading-snug">
