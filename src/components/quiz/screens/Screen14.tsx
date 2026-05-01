@@ -488,6 +488,31 @@ export function Screen14() {
         </div>
       </div>
 
+      {/* O que acontece se não tratar */}
+      <div className="bg-red-50 border border-red-200 rounded-2xl p-5">
+        <h3 className="text-red-700 font-extrabold text-base mb-4 text-center">
+          ⚠️ O Que Acontece Se Não Tratar Agora:
+        </h3>
+        <ul className="space-y-2 text-sm text-red-800">
+          {[
+            "A próstata continua a crescer",
+            "Os sintomas pioram progressivamente",
+            "Risco de cirurgia aumenta cada ano",
+            "Dependência de fraldas e sondas",
+            "Perda total do desempenho sexual",
+            "Noites sem dormir para sempre",
+          ].map((item, i) => (
+            <li key={i} className="flex gap-2 items-start">
+              <span className="flex-shrink-0">❌</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="text-center text-red-700 font-bold text-sm mt-4 leading-snug">
+          Cada dia que passa sem tratar é um dia a mais de sofrimento que podia ser evitado.
+        </p>
+      </div>
+
       <h3 className="font-extrabold text-gray-900 text-xl sm:text-2xl leading-snug text-center">
         E você não aguenta mais viver limitado, com medo de depender de fraldas,
         sondas ou cirurgia...
