@@ -198,9 +198,60 @@ function PriceCard() {
   );
 }
 
+function CountdownTimer() {
+  const getSecondsLeft = () => {
+    const now = new Date();
+    const endOfDay = new Date(now);
+    endOfDay.setHours(23, 59, 59, 999);
+    return Math.max(0, Math.floor((endOfDay.getTime() - now.getTime()) / 1000));
+  };
+
+  const [seconds, setSeconds] = useState(getSecondsLeft);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds(getSecondsLeft());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const days = Math.floor(seconds / 86400);
+  const hours = Math.floor((seconds % 86400) / 3600);
+  const mins = Math.floor((seconds % 3600) / 60);
+  const secs = seconds % 60;
+  const pad = (n: number) => String(n).padStart(2, "0");
+
+  return (
+    <div className="bg-[#1a1a2e] rounded-2xl p-5 text-center">
+      <p className="text-yellow-400 font-bold text-sm mb-3">
+        ⚠️ ATENÇÃO: Esta oferta especial expira em:
+      </p>
+      <div className="flex justify-center gap-3">
+        {[
+          { val: pad(days), label: "Dias" },
+          { val: pad(hours), label: "Horas" },
+          { val: pad(mins), label: "Min" },
+          { val: pad(secs), label: "Seg" },
+        ].map((item, i) => (
+          <div key={i} className="flex flex-col items-center">
+            <div className="bg-red-600 text-white font-extrabold text-2xl rounded-lg w-14 h-14 flex items-center justify-center shadow-lg">
+              {item.val}
+            </div>
+            <span className="text-gray-300 text-xs mt-1 font-medium">{item.label}</span>
+          </div>
+        ))}
+      </div>
+      <p className="text-gray-300 text-xs mt-3">
+        Após este tempo o preço volta a <span className="font-bold text-white">22.500 Kz</span>
+      </p>
+    </div>
+  );
+}
+
 export function Screen14() {
   return (
     <div className="space-y-6">
+      <CountdownTimer />
       {/* SECÇÃO NOVA 1 — PROTOCOLO GERADO COM SUCESSO */}
       <div className="text-center text-sm mb-2">
         😍 Protocolo <span className="underline font-bold">Gerado com SUCESSO!</span>
