@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { PrimaryButton } from "../QuizShell";
 import anaLima3Audio from "@/assets/Ana_Lima-3.mp3";
 import antesProstata from "@/assets/antes-prostata.png";
