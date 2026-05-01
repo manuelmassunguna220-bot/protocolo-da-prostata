@@ -452,7 +452,7 @@ export function Screen14() {
               marginTop: 0,
             }}
           >
-            3.500 kz
+            4.500 kz
           </div>
         </div>
         <a
