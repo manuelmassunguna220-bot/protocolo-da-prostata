@@ -191,7 +191,7 @@ function PriceCard() {
           De 12.500 Kz
         </div>
         <div className="text-[oklch(0.5_0.17_145)] font-extrabold text-xl leading-tight mt-1">
-          por 1.500 Kz
+          por 3.500 Kz
         </div>
       </div>
     </div>
