@@ -242,7 +242,7 @@ function CountdownTimer() {
         ))}
       </div>
       <p className="text-gray-300 text-xs mt-3">
-        Após este tempo o preço volta a <span className="font-bold text-white">22.500 Kz</span>
+        Após este tempo o preço volta a <span className="font-bold text-white">27.900 Kz</span>
       </p>
     </div>
   );
