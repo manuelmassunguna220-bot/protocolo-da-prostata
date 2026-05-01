@@ -468,6 +468,24 @@ export function Screen14() {
         >
           Acessar meu Protocolo Agora! ✅
         </a>
+
+        {/* Vagas restantes */}
+        <div className="mt-5 text-center">
+          <p className="text-red-600 font-bold text-sm mb-2">
+            ⚠️ Apenas 7 vagas restantes neste preço
+          </p>
+          <div className="flex justify-center gap-1 mb-2">
+            {Array.from({ length: 10 }).map((_, i) => (
+              <div
+                key={i}
+                className={`w-6 h-3 rounded-sm ${i < 7 ? "bg-green-500" : "bg-gray-200"}`}
+              />
+            ))}
+          </div>
+          <p className="text-gray-600 text-xs font-medium">
+            73% das vagas já foram preenchidas
+          </p>
+        </div>
       </div>
 
       <h3 className="font-extrabold text-gray-900 text-xl sm:text-2xl leading-snug text-center">
