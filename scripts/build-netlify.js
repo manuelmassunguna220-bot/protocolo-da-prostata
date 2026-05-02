@@ -11,9 +11,10 @@ const ROOT = resolve(import.meta.dirname, '..');
 const CLIENT_DIR = join(ROOT, 'dist', 'client');
 const OUT_DIR = join(ROOT, 'netlify-dist');
 
-// Ensure output dir
+// Ensure clean output dir
+import { rmSync } from 'fs';
 if (existsSync(OUT_DIR)) {
-  cpSync(OUT_DIR, OUT_DIR, { recursive: true }); // no-op, just to avoid errors
+  rmSync(OUT_DIR, { recursive: true, force: true });
 }
 mkdirSync(OUT_DIR, { recursive: true });
 
